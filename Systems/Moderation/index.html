@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en/US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaris Documentation - Moderation System</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="mint.png" />
+  </head>
+  <!--Scrollbar-->
+  <style>
+    ::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: #333333;
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(#bdbdbd, #696969);
+      border-radius: 20px;
+    }
+  </style>
+
+  <body onload="zoom()" class="body">
+    <header>
+      <img class="logo" src="polaris.png" />
+      <h2 class="title">Polaris Docs</h2>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="https://aertic.xyz">Home</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="https://discord.gg/85dyYFVDK5">Support</a></li>
+        </ul>
+      </nav>
+      <a class="login" href="https://aertic.xyz/login">Login</a>
+    </header>
+    <div class="docs-container">
+      <h1>Systems ➜ Moderation</h1>
+      <h6>
+        --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </h6>
+      <h4>
+        The moderation system is equipped with every moderation command you
+        might need, from warns to bans! It is also mainly focused on, well,
+        moderating members :D Our moderation system is mainly centered around
+        default permissions which a role needs to have. Everything can again be
+        found in the table below. We recommend taking some type to setup the
+        permissions to know you did it correctly. When you think you're done,
+        try running <code>/warn</code> to verify everything is alright!
+      </h4>
+      <table>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+          <th>Special Permissions</th>
+        </tr>
+        <tr>
+          <td class="tdt">/ban {member} {reason}</td>
+          <td>Bans a member</td>
+          <td>Banning</td>
+        </tr>
+        <tr>
+          <td class="tdt">/unban {member} {reason}</td>
+          <td>Unbans a member</td>
+          <td>Banning</td>
+        </tr>
+        <tr>
+          <td class="tdt">/kick {member} {reason}</td>
+          <td>Kicks a member</td>
+          <td>Kick</td>
+        </tr>
+        <tr>
+          <td class="tdt">/warn {member} {reason}</td>
+          <td>Warns a user</td>
+          <td>Change Nickname</td>
+        </tr>
+        <tr>
+          <td class="tdt">/warns {member}</td>
+          <td>Displays a members warns</td>
+          <td>none</td>
+        </tr>
+        <tr>
+          <td class="tdt">/clearwarns {member}</td>
+          <td>Clears a members warns</td>
+          <td>Manage Nicknames</td>
+        </tr>
+        <tr>
+          <td class="tdt">/mute {member} {reason}</td>
+          <td>Mutes a member</td>
+          <td>Mute Members</td>
+        </tr>
+        <tr>
+          <td class="tdt">/unmute {member}</td>
+          <td>Unmutes a member</td>
+          <td>Mute Membersr</td>
+        </tr>
+        <tr>
+          <td class="tdt">/vmute {member} {reason}</td>
+          <td>Voice mutes a member</td>
+          <td>Mute Members</td>
+        </tr>
+        <tr>
+          <td class="tdt">/vunmute {member}</td>
+          <td>Voice Un-mutes a member</td>
+          <td>Mute Members</td>
+        </tr>
+      </table>
+      <h6>
+        --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      </h6>
+      <h4>
+        All commands in this system require some special permissions, but wait!
+        How do you let your members change nicknames when the
+        <code>/warn</code> command requires the permission? You can use our
+        <code>/nick</code> command which is a part of the utility system!
+      </h4>
+      <a
+        href="https://polaris.aertic.xyz/docs/systems/core"
+        class="previous_btn"
+        >← Previous Page
+      </a>
+      <a href="https://polaris.aertic.xyz/docs/systems/economy" class="next_btn"
+        >Next Page →</a
+      >
+      <p class="divider">DIVIDER</p>
+    </div>
+    <div class="menu-container">
+      <div class="menu">
+        <ul>
+          <li class="li-text">
+            <a href="https://polaris.aertic.xyz/docs" class="li-text"
+              >Overview</a
+            >
+          </li>
+          <li class="li-textgs">
+            Getting Started
+            <ul>
+              <li class="li-sub-textgs">
+                <a
+                  class="alinkgs"
+                  href="https://polaris.aertic.xyz/docs/getting-started/inviting"
+                  >Inviting The Bot</a
+                >
+              </li>
+              <li class="li-sub-textgs">
+                <a class="alinkgs" href="#">Setting Up The Bot</a>
+              </li>
+              <li class="li-sub-textgs">
+                <a
+                  class="alinkgs"
+                  href="https://polaris.aertic.xyz/docs/getting-started/config"
+                  >Configuring Channels</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="li-texts" style="color: #af8cef">
+            Systems
+            <ul>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/overview"
+                  >System Overview</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/core"
+                  >Core System</a
+                >
+              </li>
+              <li class="li-sub-texts" style="color: #af8cef">
+                <a
+                  class="alinks"
+                  style="color: #af8cef"
+                  href="https://polaris.aertic.xyz/docs/systems/moderation"
+                  >Moderation Systen</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/economy"
+                  >Economy System</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/leveling"
+                  >Leveling System</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/fun"
+                  >Fun System</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/music"
+                  >Music System</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/reward"
+                  >Reward System</a
+                >
+              </li>
+              <li class="li-sub-texts">
+                <a
+                  class="alinks"
+                  href="https://polaris.aertic.xyz/docs/systems/utility"
+                  >Utility System</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="li-textm">
+            Modules
+            <ul>
+              <li class="li-sub-textm">
+                <a
+                  class="alinkm"
+                  href="https://polaris.aertic.xyz/docs/modules/overview"
+                  >Modules Overview</a
+                >
+              </li>
+              <li class="li-sub-textm">
+                <a
+                  class="alinkm"
+                  href="https://polaris.aertic.xyz/docs/modules/creation"
+                  >Creating Modules</a
+                >
+              </li>
+              <li class="li-sub-textm">
+                <a
+                  class="alinkm"
+                  href="https://polaris.aertic.xyz/docs/modules/upload"
+                  >Uploading Modules</a
+                >
+              </li>
+              <li class="li-sub-textm">
+                <a
+                  class="alinkm"
+                  href="https://polaris.aertic.xyz/docs/modules/use"
+                  >Using Modules</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function zoom() {
+        document.body.style.zoom = "110%";
+      }
+    </script>
+  </body>
+</html>
